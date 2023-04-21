@@ -346,9 +346,10 @@
           <h3>Contato</h3>
           <form class="form" action="https://api.staticforms.xyz/submit" method="POST">
             <input type="hidden" name="accessKey" value="1b6cc65f-60e6-4fce-b86d-22a50acb7b89">
-            <input type="text" class="field" name="nome" placeholder="Nome">
+            <input type="hidden" name="redirectTo" value="https://portfolio-markshenrik.vercel.app/">
+            <input type="text" class="field" name="name" placeholder="Nome">
             <input type="text" class="field" name="email" placeholder="Email">
-            <textarea class="field" name="mensagem" placeholder="Digite a sua mensagem" id="message" cols="30" rows="10"></textarea>
+            <textarea class="field" name="message" placeholder="Digite a sua mensagem" id="message" cols="30" rows="10"></textarea>
             <input type="submit" value="Enviar">
           </form>
         </div>
