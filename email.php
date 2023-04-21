@@ -6,7 +6,7 @@
   $data_envio = date('d/m/Y');
   $hora_envio = date('H:i:s');
 
-  //Compo E-mail
+  //Campo E-mail
   $arquivo = "
     <html>
       <p><b>Nome: </b>$nome</p>
@@ -28,5 +28,9 @@
   //Enviar
   mail($destino, $assunto, $arquivo, $headers);
   
-  echo "<meta http-equiv='refresh' content='10;URL=./index.html'>";
+  if(mail($destino, $assunto, $arquivo, $headers)){
+    echo("Email enviado com sucesso!");
+  }else{
+    echo("O Email não pode ser enviado");
+  }
 ?>
