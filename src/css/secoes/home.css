@@ -1,5 +1,11 @@
+.bg-section, .projetos{
+    background-image: url("../../imagens/v1016-b-08.jpg");
+    /* licença: <a href="https://br.freepik.com/vetores-gratis/fundo-preto-da-area-de-trabalho-vetor-de-desenho-de-padrao-geometrico_18705243.htm#query=backgrounds&position=23&from_view=search&track=sph">Imagem de rawpixel.com</a> no Freepik */
+    background-size: cover;
+}
+
 .home .full-screen {
-    padding: 50px 0;
+    padding: 0 0 50px 0;;
     min-height: 86vh;
 }
 
@@ -14,8 +20,8 @@
     padding: 0 15px;
 }
 
-@media(max-width: 1280px) {
-    .home .texto-home, .home .img-home {
+
+.home .texto-home, .home .img-home {
         flex: 0 0 1000%;
         max-width: 100%;
         text-align: center;
@@ -24,10 +30,10 @@
     .home .img-home {
         margin-top: 50px;
     }
-}
+
 
 .home .img-home .img-box {
-    max-width: 450px;
+    max-width: 350px;
     margin: auto;
     border-radius: 50%;
 }
@@ -39,20 +45,25 @@
 }
 
 .home .texto-home p {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: var(--fonte-grande);
     margin-bottom: 10px;
 }
 
 .home .texto-home h1 {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: var(--fonte-gigante);
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+.home .texto-home span{
+    color: var(--cor-primaria)
+}
+
+
 .home .texto-home h2 {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: var(--fonte-grande);
     letter-spacing: 2px;
     margin-bottom: 30px;

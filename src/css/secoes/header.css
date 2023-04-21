@@ -1,20 +1,22 @@
 .header {
-    padding: 30px 15px;
+    padding: 15px;
 }
 
 .header .logo {
-    font-family: var(--fonte-secundaria);
+    font-family: var(--fonte-primaria);
     font-size: var(--fonte-extra-grande);
     color: var(--cor-branca);
     border: 2px solid var(--cor-branca);
-    border-radius: 50%;
-    width: 65px;
-    height: 65px;
-    line-height: 55px;
+    /* border-radius: 50%; */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 75px;
+    height: 75px;
+    line-height: 65px;
     text-align: center;
     text-decoration: underline;
     transition: 0.2s;
 }
+
 
 .header a:hover .logo {
     color: var(--cor-primaria);
@@ -33,13 +35,16 @@
     padding: 10px 20px;
     transition: 0.2s;
     border-radius: 50px;
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
     letter-spacing: 1px;
     user-select: none;
 }
 
 .header nav ul li a:hover{
-    background-color: var(--cor-primaria);;
-    color: var(--cor-branca);
+    background-color: var(--cor-branca); 
+    color: var(--cor-primaria);
+    position: relative;
+    bottom: 2px;
 }
 
 .header .menu{
