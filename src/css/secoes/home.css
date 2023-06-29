@@ -1,12 +1,7 @@
-.bg-section, .projetos{
-    background-image: url("../../imagens/v1016-b-08.jpg");
-    /* licença: <a href="https://br.freepik.com/vetores-gratis/fundo-preto-da-area-de-trabalho-vetor-de-desenho-de-padrao-geometrico_18705243.htm#query=backgrounds&position=23&from_view=search&track=sph">Imagem de rawpixel.com</a> no Freepik */
-    background-size: cover;
-}
 
 .home .full-screen {
     padding: 0 0 50px 0;;
-    min-height: 86vh;
+    min-height: 100vh;
 }
 
 .home .texto-home {
@@ -15,7 +10,6 @@
 
 .home .texto-home, .home .img-home {
     flex: 0 0 50%;
-    /* ocupa 50% do tamanho e não faz grow nem shrink */
     max-width: 50%;
     padding: 0 15px;
 }

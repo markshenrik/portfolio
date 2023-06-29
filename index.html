@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
     <link rel="stylesheet" href="src/css/secoes/projetos.css" />
     <link rel="stylesheet" href="src/css/secoes/footer.css" />
+    <link rel="stylesheet" href="src/css/secoes/animate.css" />
   </head>
   <style>
     /* Estilos para o formulário de contato */
@@ -33,7 +34,9 @@
     <div class="bg-section">
       <header class="header">
         <div class="container">
-          <div class="row justify-content-between alinhar-itens-no-centro slideDown">
+          <div
+            class="row justify-content-between alinhar-itens-no-centro slideDown init-off"
+          >
             <a href="#">
               <h1 class="logo">MH</h1>
             </a>
@@ -58,9 +61,9 @@
       <section class="home">
         <div class="container">
           <div class="row full-screen alinhar-itens-no-centro">
-            <div class="texto-home slideUp">
-              <h1>Olá, sou o <span>Marks Henrik</span></h1>
-              <h2>Desenvolvedor Web Júnior</h2>
+            <div class="texto-home init-off slideUp">
+              <h1><span>Marks Henrik</span></h1>
+              <h2>Desenvolvedor Web FrontEnd Jr</h2>
 
               <div class="redes-sociais">
                 <a
@@ -96,13 +99,13 @@
     <section class="sobre-mim section" id="sobre-mim">
       <div class="container">
         <div class="row">
-          <div class="section-title">
+          <div class="section-title init-off slideDown">
             <h2>Sobre mim</h2>
           </div>
         </div>
         <div class="row">
           <div class="imagem-sobre-mim">
-            <div class="img-box inner-shadow slideRight">
+            <div class="img-box inner-shadow init-off slideRight">
               <img
                 src="src/imagens/foto-perfil.jpg"
                 alt="foto sobre mim"
@@ -110,7 +113,7 @@
               />
             </div>
           </div>
-          <div class="informacoes-sobre-mim slideLeft">
+          <div class="informacoes-sobre-mim init-off slideLeft">
             <p>
               <strong
                 >Me chamo Marks Henrik, sou um desenvolvedor frontend e almejo
@@ -210,9 +213,9 @@
                         id="node"
                       ></i>
                     </div>
-                    <h3>Node</h3>
+                    <h3>Node.JS</h3>
                   </div>
-                  
+
                   <div class="informacoes mongo">
                     <div class="logo">
                       <i class="devicon devicon-mongodb-plain" id="mongo"></i>
@@ -246,132 +249,197 @@
     <section class="projetos section" id="projetos">
       <div class="container">
         <div class="row">
-          <div class="section-title">
+          <div class="section-title init-off slideDown">
             <h2>Projetos</h2>
           </div>
         </div>
 
         <ul class="portfolio-projects">
-          <li class="portfolio-projects-item slideUp" style="animation-delay: 0s;">
+          <li
+            class="portfolio-projects-item init-off slideUp"
+            
+          >
             <p>Projeto Pokedex React App</p>
-            <a href="https://projeto-react-api-pokemon.vercel.app/" target="_blank">
-              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block;">
-                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/pokedex/desktop.gif">
-              </div>
-              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
-                <img class="portfolio-projects-item-celular-image" src="./src/imagens/pokedex/mobile.gif">
-              </div>
-            </a>
-          </li>
-        
-          <li class="portfolio-projects-item slideUp" style="animation-delay: 0.2s;">
-            <p>Projeto GitHub Users</p>
-            <a href="https://markshenrik.github.io/projeto-inicial-fetch-github-api/" target="_blank">
-              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
-                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/github/desktop.gif">
-              </div>
-              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
-                <img class="portfolio-projects-item-celular-image" src="./src/imagens/github/mobile.gif">
-              </div>
-            </a>
-          </li>
-        
-          <li class="portfolio-projects-item slideUp" style="animation-delay: 0.4s;">
-            <p>Projeto de Cadastro de Clientes</p>
-            <a href="https://markshenrik.github.io/cadastro-de-clientes/" target="_blank">
-              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
-                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/crud/desktop.gif">
-              </div>
-              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
-                <img class="portfolio-projects-item-celular-image" src="./src/imagens/crud/mobile.gif">
-              </div>
-            </a>
-          </li>
-        
-          <li class="portfolio-projects-item slideUp" style="animation-delay: 0.6s;">
-            <p>Projeto Landing Page</p>
-            <a href="https://markshenrik.github.io/front-end-mentor-fylo/" target="_blank">
-              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
-                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/landing-page/desktop.gif">
-              </div>
-              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
-                <img class="portfolio-projects-item-celular-image" src="./src/imagens/landing-page/mobile.gif">
-              </div>
-            </a>
-          </li>
-
-          <li class="portfolio-projects-item slideUp" style="animation-delay: 0.6s;">
-            <p>Projeto Google Api React Library</p>
-            <a href="https://react-library-google-api.vercel.app/" target="_blank">
-              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
-                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/library/desktop.gif">
-              </div>
-              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
-                <img class="portfolio-projects-item-celular-image" src="/src/imagens/library/mobile.gif">
-              </div>
-            </a>
-          </li>
-        </ul>
-        
-
-        <!-- <div class="container-projetos">
-          <div class="projeto">
             <a
               href="https://projeto-react-api-pokemon.vercel.app/"
               target="_blank"
             >
-              <img src="./src/imagens/pokedex/mobile.gif" alt="Nome do projeto" />
-              <h3>Pokedex API React</h3>
+              <div
+                class="portfolio-projects-item-monitor"
+                style="
+                  background-image: url('./src/imagens/frame/desktop.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-monitor-image"
+                  src="./src/imagens/pokedex/desktop.gif"
+                />
+              </div>
+              <div
+                class="portfolio-projects-item-celular"
+                style="
+                  background-image: url('./src/imagens/frame/mobile.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-celular-image"
+                  src="./src/imagens/pokedex/mobile.gif"
+                />
+              </div>
             </a>
-          </div>
+          </li>
 
-          <div class="projeto">
+          <li
+            class="portfolio-projects-item init-off slideUp"
+            
+          >
+            <p>Projeto GitHub Users</p>
             <a
               href="https://markshenrik.github.io/projeto-inicial-fetch-github-api/"
               target="_blank"
             >
-              <img src="./src/imagens/github/mobile.gif" alt="Nome do projeto" />
-              <h3>GitHub API</h3>
+              <div
+                class="portfolio-projects-item-monitor"
+                style="
+                  background-image: url('./src/imagens/frame/desktop.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-monitor-image"
+                  src="./src/imagens/github/desktop.gif"
+                />
+              </div>
+              <div
+                class="portfolio-projects-item-celular"
+                style="
+                  background-image: url('./src/imagens/frame/mobile.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-celular-image"
+                  src="./src/imagens/github/mobile.gif"
+                />
+              </div>
             </a>
-          </div>
+          </li>
 
-          <div class="projeto">
+          <li
+            class="portfolio-projects-item init-off slideUp"
+            
+          >
+            <p>Projeto de Cadastro de Clientes</p>
             <a
               href="https://markshenrik.github.io/cadastro-de-clientes/"
               target="_blank"
             >
-              <img src="./src/imagens/crud/mobile.gif" alt="Nome do projeto" />
-              <h3>Cadastro de Clientes</h3>
+              <div
+                class="portfolio-projects-item-monitor"
+                style="
+                  background-image: url('./src/imagens/frame/desktop.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-monitor-image"
+                  src="./src/imagens/crud/desktop.gif"
+                />
+              </div>
+              <div
+                class="portfolio-projects-item-celular"
+                style="
+                  background-image: url('./src/imagens/frame/mobile.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-celular-image"
+                  src="./src/imagens/crud/mobile.gif"
+                />
+              </div>
             </a>
-          </div>
+          </li>
 
-          <div class="projeto">
+          <li
+            class="portfolio-projects-item init-off slideUp"
+            
+          >
+            <p>Projeto Landing Page</p>
             <a
               href="https://markshenrik.github.io/front-end-mentor-fylo/"
               target="_blank"
             >
-              <img
-                src="./src/imagens/landing-page/mobile.gif"
-                alt="Nome do projeto"
-              />
-              <h3>Landing Page</h3>
+              <div
+                class="portfolio-projects-item-monitor"
+                style="
+                  background-image: url('./src/imagens/frame/desktop.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-monitor-image"
+                  src="./src/imagens/landing-page/desktop.gif"
+                />
+              </div>
+              <div
+                class="portfolio-projects-item-celular"
+                style="
+                  background-image: url('./src/imagens/frame/mobile.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-celular-image"
+                  src="./src/imagens/landing-page/mobile.gif"
+                />
+              </div>
             </a>
-          </div>
+          </li>
 
-          <div class="projeto">
+          <li
+            class="portfolio-projects-item init-off slideUp"
+            
+          >
+            <p>Projeto Google Api React Library</p>
             <a
               href="https://react-library-google-api.vercel.app/"
               target="_blank"
             >
-              <img src="./src/imagens/library/mobile.gif" alt="Nome do projeto" />
-              <h3>Livraria React</h3>
+              <div
+                class="portfolio-projects-item-monitor"
+                style="
+                  background-image: url('./src/imagens/frame/desktop.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-monitor-image"
+                  src="./src/imagens/library/desktop.gif"
+                />
+              </div>
+              <div
+                class="portfolio-projects-item-celular"
+                style="
+                  background-image: url('./src/imagens/frame/mobile.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-celular-image"
+                  src="/src/imagens/library/mobile.gif"
+                />
+              </div>
             </a>
-          </div>
-        </div> -->
+          </li>
+        </ul>
+
       </div>
     </section>
     <footer id="contato" class="footer">
-      <div class="container">
+      <div class="container init-off slideRight">
         <h2>Me envie uma mensagem!</h2>
         <div class="redes-sociais">
           <a
@@ -404,7 +472,7 @@
           Resposta imediata ou em menos de 24h para qualquer meio de contato.
         </p>
       </div>
-      <section class="content">
+      <section class="content init-off slideLeft">
         <div class="contato">
           <h3>Contato</h3>
           <form
@@ -439,5 +507,23 @@
         </div>
       </section>
     </footer>
+    <script>
+      const sections = document.querySelectorAll(".init-off");
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      },{
+        threshold: [0.5]
+      });
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
   </body>
 </html>

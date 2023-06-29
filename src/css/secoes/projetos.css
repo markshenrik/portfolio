@@ -1,44 +1,16 @@
 /* PROJETOS */
+.bg-section, .projetos{
+  background-image: url("../../imagens/v1016-b-08.jpg") ;
+  /* licença: <a href="https://br.freepik.com/vetores-gratis/fundo-preto-da-area-de-trabalho-vetor-de-desenho-de-padrao-geometrico_18705243.htm#query=backgrounds&position=23&from_view=search&track=sph">Imagem de rawpixel.com</a> no Freepik */
+  background-size: cover;
+}
+
+
 .projetos .container-projetos .projeto {
   width: 250px;
   height: 300px;
 }
 
-.projetos .container-projetos {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* grid-template-columns: repeat(auto-fill, minmax(200px, 240px)); */
-  /* grid-template-columns: auto auto;
-    margin: 0 auto;
-    grid-gap: 20px;
-    place-content: center;    */
-}
-
-.projetos .container-projetos > div:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 1280px) {
-  .projetos .container-projetos {
-    padding: 0 var(--mobile-padding);
-  }
-}
-
-.projetos .container-projetos .projeto {
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  position: relative;
-  opacity: 0.8;
-}
-
-.projetos .container-projetos .projeto:hover {
-  opacity: 1;
-}
 
 .portfolio-projects-item-monitor-image {
   position: absolute;
@@ -49,26 +21,6 @@
   transition: 0.7s;
 }
 
-/* .projetos .container-projetos .projeto h3 {
-    font-size: 2rem;
-    font-weight: 500;    
-    position: absolute;      
-    opacity: 0.7;
-    background-color: var(--cor-fundo-escuro);
-    color: var(--cor-branca);
-    width: 100%;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    bottom: 0;
-    text-align: center;
-} */
-
-.projetos .container-projetos .projeto img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
 .portfolio-projects {
   display: flex;
   flex-direction: column;
@@ -77,10 +29,10 @@
 
 .portfolio-projects-item {
   margin: 25px;
-  opacity: 0;
   cursor: pointer;
   transition: 0.7s;
   border-radius: 8px;
+  animation-delay: 0.2s;
 }
 
 .portfolio-projects-item p{
@@ -187,88 +139,4 @@
   .portfolio-projects-item p{
     font-size: var(--fonte-normal);
   }
-}
-
-.slideUp {
-    animation: slideUp 1.8s ease forwards;
-}
-
-@keyframes slideUp{ 
-    0% {
-        opacity: 0;
-        transform: translateY(80px);
-    }
-    25% {
-        transform: translateY(-10px);
-    }
-    75% {
-        transform: translateY(4px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.slideDown{
-    animation: slideDown 1.8s ease forwards;
-}
-
-@keyframes slideDown{ 
-    0% {
-        opacity: 0;
-        transform: translateY(-80px);
-    }
-    25% {
-        transform: translateY(10px);
-    }
-    75% {
-        transform: translateY(-4px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.slideRight{
-    animation: slideRight 1.8s ease forwards;
-}
-
-@keyframes slideRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-200px);
-      }
-      25% {
-        transform: translateX(25px);
-      }
-      75% {
-        transform: translateX(-4px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-}
-
-.slideLeft{
-    animation: slideLeft 1.8s ease forwards;
-}
-
-@keyframes slideLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(200px);
-      }
-      25% {
-        transform: translateX(-25px);
-      }
-      75% {
-        transform: translateX(4px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
 }

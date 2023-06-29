@@ -1,5 +1,13 @@
-.header {
+.header .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 15px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 80%;
+    backdrop-filter: blur(5px);
 }
 
 .header .logo {
@@ -7,7 +15,6 @@
     font-size: var(--fonte-extra-grande);
     color: var(--cor-branca);
     border: 2px solid var(--cor-branca);
-    /* border-radius: 50%; */
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     width: 75px;
     height: 75px;
@@ -118,7 +125,7 @@
     .header .menu {
         display: block; 
         position: absolute;
-        top: -25px;
+        top: 5px;
     }
 
     .header nav input:checked ~ ul {
