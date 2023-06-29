@@ -68,3 +68,9 @@
     letter-spacing: 2px;
     margin-bottom: 30px;
 }
+
+@media(max-width: 630px){
+    .home .texto-home{
+        margin-top: 120px;
+    }
+}

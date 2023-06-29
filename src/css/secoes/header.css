@@ -117,6 +117,8 @@
 @media(max-width: 900px) {
     .header .menu {
         display: block; 
+        position: absolute;
+        top: -25px;
     }
 
     .header nav input:checked ~ ul {
@@ -133,7 +135,7 @@
    .header nav ul {
         display: none;        
         background-color: var(--cor-fundo-escuro);         
-        padding: 20px;       
+        padding: 15px; 
     }
     
     .header nav li a {
