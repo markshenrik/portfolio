@@ -33,7 +33,7 @@
     <div class="bg-section">
       <header class="header">
         <div class="container">
-          <div class="row justify-content-between alinhar-itens-no-centro">
+          <div class="row justify-content-between alinhar-itens-no-centro slideDown">
             <a href="#">
               <h1 class="logo">MH</h1>
             </a>
@@ -58,7 +58,7 @@
       <section class="home">
         <div class="container">
           <div class="row full-screen alinhar-itens-no-centro">
-            <div class="texto-home">
+            <div class="texto-home slideUp">
               <h1>Olá, sou o <span>Marks Henrik</span></h1>
               <h2>Desenvolvedor Web Júnior</h2>
 
@@ -102,7 +102,7 @@
         </div>
         <div class="row">
           <div class="imagem-sobre-mim">
-            <div class="img-box inner-shadow">
+            <div class="img-box inner-shadow slideRight">
               <img
                 src="src/imagens/foto-perfil.jpg"
                 alt="foto sobre mim"
@@ -110,7 +110,7 @@
               />
             </div>
           </div>
-          <div class="informacoes-sobre-mim">
+          <div class="informacoes-sobre-mim slideLeft">
             <p>
               <strong
                 >Me chamo Marks Henrik, sou um desenvolvedor frontend e almejo
@@ -212,13 +212,13 @@
                     </div>
                     <h3>Node</h3>
                   </div>
-                  <!-- 
+                  
                   <div class="informacoes mongo">
                     <div class="logo">
                       <i class="devicon devicon-mongodb-plain" id="mongo"></i>
                     </div>
                     <h3>Mongo</h3>
-                  </div> -->
+                  </div>
 
                   <div class="informacoes jest">
                     <div class="logo">
@@ -250,37 +250,71 @@
             <h2>Projetos</h2>
           </div>
         </div>
-        <!-- <ul class="portfolio-projects">
+
+        <ul class="portfolio-projects">
           <li class="portfolio-projects-item slideUp" style="animation-delay: 0s;">
-            <p style="color: gray; text-align: center;">Clique na imagem para abrir o site</p>
-            <a href="https://projeto-react-api-pokemon.vercel.app/" target="_blank"><div class="portfolio-projects-item-monitor" style="background-image: url("./src/imagens/frame/desktop.png");"><img class="portfolio-projects-item-monitor-image" src="./src/imagens/pokedex/desktop.gif"></div><div class="portfolio-projects-item-celular" style="background-image: url("./src/imagens/frame/mobile.png");"><img class="portfolio-projects-item-celular-image" src="./src/imagens/pokedex/mobile.gif"></div></a></li>
-
+            <p>Projeto Pokedex React App</p>
+            <a href="https://projeto-react-api-pokemon.vercel.app/" target="_blank">
+              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block;">
+                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/pokedex/desktop.gif">
+              </div>
+              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
+                <img class="portfolio-projects-item-celular-image" src="./src/imagens/pokedex/mobile.gif">
+              </div>
+            </a>
+          </li>
+        
           <li class="portfolio-projects-item slideUp" style="animation-delay: 0.2s;">
-            <p style="color: gray; text-align: center;">Clique na imagem para abrir o site</p>
-            <a href="https://recipes-opal.vercel.app/" target="_blank"><div class="portfolio-projects-item-monitor" style="background-image: url("./src/imagens/frame/desktop.png");"><img class="portfolio-projects-item-monitor-image" src="https://i.ibb.co/XbgQJmY/recipes.gif"></div><div class="portfolio-projects-item-celular" style="background-image: url("./src/imagens/frame/mobile.png");"><img class="portfolio-projects-item-celular-image" src="https://i.ibb.co/VLtctxT/mobilerecipes.png"></div></a></li>
-
+            <p>Projeto GitHub Users</p>
+            <a href="https://markshenrik.github.io/projeto-inicial-fetch-github-api/" target="_blank">
+              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
+                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/github/desktop.gif">
+              </div>
+              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
+                <img class="portfolio-projects-item-celular-image" src="./src/imagens/github/mobile.gif">
+              </div>
+            </a>
+          </li>
+        
           <li class="portfolio-projects-item slideUp" style="animation-delay: 0.4s;">
-            <p style="color: gray; text-align: center;">Clique na imagem para abrir o site</p>
-            <a href="https://tmdb-project-3.vercel.app" target="_blank"><div class="portfolio-projects-item-monitor" style="background-image: url("./src/imagens/frame/desktop.png");"><img class="portfolio-projects-item-monitor-image" src="https://user-images.githubusercontent.com/93871055/232068371-21697ea1-a3bf-40dc-8257-9b2dbe17d059.gif"></div><div class="portfolio-projects-item-celular" style="background-image: url("./src/imagens/frame/mobile.png");"><img class="portfolio-projects-item-celular-image" src="https://i.ibb.co/GWwFp9k/imagem-2023-06-04-104900149.png"></div></a></li>
+            <p>Projeto de Cadastro de Clientes</p>
+            <a href="https://markshenrik.github.io/cadastro-de-clientes/" target="_blank">
+              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
+                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/crud/desktop.gif">
+              </div>
+              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
+                <img class="portfolio-projects-item-celular-image" src="./src/imagens/crud/mobile.gif">
+              </div>
+            </a>
+          </li>
+        
+          <li class="portfolio-projects-item slideUp" style="animation-delay: 0.6s;">
+            <p>Projeto Landing Page</p>
+            <a href="https://markshenrik.github.io/front-end-mentor-fylo/" target="_blank">
+              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
+                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/landing-page/desktop.gif">
+              </div>
+              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
+                <img class="portfolio-projects-item-celular-image" src="./src/imagens/landing-page/mobile.gif">
+              </div>
+            </a>
+          </li>
 
           <li class="portfolio-projects-item slideUp" style="animation-delay: 0.6s;">
-            <p style="color: gray; text-align: center;">Clique na imagem para abrir o site</p>
-            <a href="https://pokesearch-nine.vercel.app/" target="_blank"><div class="portfolio-projects-item-monitor" style="background-image: url("./src/imagens/frame/desktop.png");"><img class="portfolio-projects-item-monitor-image" src="https://user-images.githubusercontent.com/93871055/218237944-e102df35-d636-4606-9b96-f16860770fbc.gif"></div><div class="portfolio-projects-item-celular" style="background-image: url("./src/imagens/frame/mobile.png");"><img class="portfolio-projects-item-celular-image" src="https://i.ibb.co/sR4Q06Q/mobile-pokesearch.png"></div></a></li>
-        </ul> -->
-        <!-- <div>
-          <p style="color: gray; text-align: center;">Clique na imagem para abrir o site</p>
-          <a href="https://projeto-react-api-pokemon.vercel.app/" target="_blank">
-            <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png');">
-              <img class="portfolio-projects-item-monitor-image" src="./src/imagens/pokedex/desktop.gif">
-            </div>
-            <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png');">
-              <img class="portfolio-projects-item-celular-image" src="./src/imagens/pokedex/mobile.gif">
-            </div>
-          </a>
-        </div> -->
+            <p>Projeto Google Api React Library</p>
+            <a href="https://react-library-google-api.vercel.app/" target="_blank">
+              <div class="portfolio-projects-item-monitor" style="background-image: url('./src/imagens/frame/desktop.png'); display: inline-block">
+                <img class="portfolio-projects-item-monitor-image" src="./src/imagens/library/desktop.gif">
+              </div>
+              <div class="portfolio-projects-item-celular" style="background-image: url('./src/imagens/frame/mobile.png'); display: inline-block">
+                <img class="portfolio-projects-item-celular-image" src="/src/imagens/library/mobile.gif">
+              </div>
+            </a>
+          </li>
+        </ul>
         
 
-        <div class="container-projetos">
+        <!-- <div class="container-projetos">
           <div class="projeto">
             <a
               href="https://projeto-react-api-pokemon.vercel.app/"
@@ -333,7 +367,7 @@
               <h3>Livraria React</h3>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <footer id="contato" class="footer">
