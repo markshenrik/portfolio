@@ -116,21 +116,15 @@
           <div class="informacoes-sobre-mim init-off slideLeft">
             <p>
               <strong
-                >Me chamo Marks Henrik, sou um desenvolvedor fullstack!</strong
+                >Me chamo Marks Henrik e sou um desenvolvedor web
+                fullstack.</strong
               >
-              Meu fascínio pela tecnologia surgiu ainda na adolescência após
-              assistir ao clássico filme <i>Piratas da Informática</i>. Porém,
-              somente em 2021 decidi mergulhar neste universo e me tornar desenvolvedor web. Este é um portfólio
-              inicial criado com a finalidade de apresentar os meus primeiros
-              projetos pessoais.
-            </p>
-
-            <p>
               Sou um profissional que está sempre em busca de conhecimento,
               engajado em comunidades e projetos que me desafiam constantemente.
-              Atualmente faço MBA em Cloud Computing e me dedico ao estudo de banco de dados <strong>MySQL</strong> e
-              <strong>MongoDB</strong> e desenvolvimento de APIs com <strong>Node.JS</strong>. 
-              Além disso, nutro grande admiração e interesse pela área de segurança de
+              Atualmente faço MBA em Cloud Computing e me dedico ao estudo de
+              banco de dados <strong>MySQL</strong> e <strong>MongoDB</strong> e
+              desenvolvimento de APIs com <strong>Node.JS</strong>. Além disso,
+              nutro grande admiração e interesse pela área de segurança de
               dados.
             </p>
 
@@ -260,46 +254,40 @@
         </div>
 
         <ul class="portfolio-projects">
-          <li
-          class="portfolio-projects-item init-off slideUp"
-          
-        >
-          <p>Projeto Google Books Api React Library</p>
-          <a
-            href="https://react-library-google-api.vercel.app/"
-            target="_blank"
-          >
-            <div
-              class="portfolio-projects-item-monitor"
-              style="
-                background-image: url('./src/imagens/frame/desktop.png');
-                display: inline-block;
-              "
+          <li class="portfolio-projects-item init-off slideUp">
+            <p>Projeto Google Books Api React Library</p>
+            <a
+              href="https://react-library-google-api.vercel.app/"
+              target="_blank"
             >
-              <img
-                class="portfolio-projects-item-monitor-image"
-                src="./src/imagens/library/desktop.gif"
-              />
-            </div>
-            <div
-              class="portfolio-projects-item-celular"
-              style="
-                background-image: url('./src/imagens/frame/mobile.png');
-                display: inline-block;
-              "
-            >
-              <img
-                class="portfolio-projects-item-celular-image"
-                src="/src/imagens/library/mobile.gif"
-              />
-            </div>
-          </a>
-        </li>
-        
-          <li
-            class="portfolio-projects-item init-off slideUp"
-            
-          >
+              <div
+                class="portfolio-projects-item-monitor"
+                style="
+                  background-image: url('./src/imagens/frame/desktop.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-monitor-image"
+                  src="./src/imagens/library/desktop.gif"
+                />
+              </div>
+              <div
+                class="portfolio-projects-item-celular"
+                style="
+                  background-image: url('./src/imagens/frame/mobile.png');
+                  display: inline-block;
+                "
+              >
+                <img
+                  class="portfolio-projects-item-celular-image"
+                  src="/src/imagens/library/mobile.gif"
+                />
+              </div>
+            </a>
+          </li>
+
+          <li class="portfolio-projects-item init-off slideUp">
             <p>Projeto Pokedex React App</p>
             <a
               href="https://projeto-react-api-pokemon.vercel.app/"
@@ -332,10 +320,7 @@
             </a>
           </li>
 
-          <li
-            class="portfolio-projects-item init-off slideUp"
-            
-          >
+          <li class="portfolio-projects-item init-off slideUp">
             <p>Projeto GitHub Users</p>
             <a
               href="https://markshenrik.github.io/projeto-inicial-fetch-github-api/"
@@ -368,10 +353,7 @@
             </a>
           </li>
 
-          <li
-            class="portfolio-projects-item init-off slideUp"
-            
-          >
+          <li class="portfolio-projects-item init-off slideUp">
             <p>Projeto de Cadastro de Clientes</p>
             <a
               href="https://markshenrik.github.io/cadastro-de-clientes/"
@@ -404,10 +386,7 @@
             </a>
           </li>
 
-          <li
-            class="portfolio-projects-item init-off slideUp"
-            
-          >
+          <li class="portfolio-projects-item init-off slideUp">
             <p>Projeto Landing Page</p>
             <a
               href="https://markshenrik.github.io/front-end-mentor-fylo/"
@@ -440,7 +419,6 @@
             </a>
           </li>
         </ul>
-
       </div>
     </section>
     <footer id="contato" class="footer">
@@ -515,16 +493,19 @@
     <script>
       const sections = document.querySelectorAll(".init-off");
 
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-            observer.unobserve(entry.target);
-          }
-        });
-      },{
-        threshold: [0.5]
-      });
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: [0.5],
+        }
+      );
 
       sections.forEach((section) => {
         observer.observe(section);
